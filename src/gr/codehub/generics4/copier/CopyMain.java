@@ -1,6 +1,7 @@
 package gr.codehub.generics4.copier;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class CopyMain {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
