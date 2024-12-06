@@ -8,7 +8,7 @@ public class CopyMain {
         System.out.println(person1.toString());
 
         Copy1ByFile copier = new Copy1ByFile();
-        Person person2 = (Person)copier.copyObject("S");
+        Person person2 = (Person)copier.copyObject(person1);
         System.out.println(person2);
         person2.setName("Panos");
         System.out.println(person2);
@@ -16,6 +16,10 @@ public class CopyMain {
         Copy2ByFile<Person> copier2 = new Copy2ByFile<>();
         Person person3 = copier2.copyObject(person1);
         System.out.println(person3);
+
+        Copy3ByFile copier3 = new Copy3ByFile();
+        Person person4 = copier3.copyObject(person1);
+        System.out.println(person4);
     }
 
 }
