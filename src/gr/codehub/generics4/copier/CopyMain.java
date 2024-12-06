@@ -20,6 +20,9 @@ public class CopyMain {
         Copy3ByFile copier3 = new Copy3ByFile();
         Person person4 = copier3.copyObject(person1);
         System.out.println(person4);
+
+        Person person5 = CopySerializable.copyObject(person1);
+        System.out.println("Person5=" + person5);
     }
 
 }
